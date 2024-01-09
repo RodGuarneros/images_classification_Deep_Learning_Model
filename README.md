@@ -27,5 +27,23 @@ Max pooling works, for instance, by retaining the maximum feature response withi
 
 If you want to play with CNN in 2D and 3D, please visit the Harley's website: [https://adamharley.com/nn_vis/mlp/2d.html](https://adamharley.com/nn_vis/). An interactive node-link visualization of Convolutional Neural Networks.
 
+# Increase filters or drop out
+
+- Improve accuracy by adding more feature detectors/filters or adding dropouts.
+- Dropout refers to dropping out units in a neural network.
+- Neurons develop co-dependency amongst each other during training.
+- Dropout is a regularization technique for reducing overfitting in neural networks.
+- It enables training to occur on several architectures of the neural network.
+
+## LENET NETWORK (Gradient-Based Learning Applied to Document Recognition)
+### A creation by Yann LeCun, Léon Bottou, Yoshua Bengio, and Patric Haffner, 1998
+![Here you can find the article](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)
+
+
+
+
+
+
+
 
 
