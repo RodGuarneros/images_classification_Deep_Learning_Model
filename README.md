@@ -6,7 +6,7 @@ The CNN used here is known as LeNet (A convolutional neural network).
 
 The dataset contains 43 different classes of signs.
 
-
+What is amazing is the accuracy shown by the model (almost 0.99). The F1 score is also very high: 0.98.
 
 Having in mind the architecture of convolutional linear neural networks. The elements are simple: 
 
@@ -34,6 +34,48 @@ If you want to play with CNN in 2D and 3D, please visit the Harley's website: [h
 - Neurons develop co-dependency amongst each other during training.
 - Dropout is a regularization technique for reducing overfitting in neural networks.
 - It enables training to occur on several architectures of the neural network.
+
+## Convolutional Neural Network Achitecture (LENET)
+
+STEP 0: 
+
+- Input
+
+STEP 1, la primera capa convolucional - LAYER #1: 
+
+- Input = 32x32x1
+- Output = 28x28x6
+- Output = (Input-filter+1)/Stride* => (32-5+1)/1 = 28
+- Used a 5x5 Filter with input depth of 3 and output depth of 6
+- Apply a RELU Activation function to the output
+- pooling for input 28x28x6 and Output = 14x14x6
+
+STEP 2, the second convolutional  - LAYER #2:
+
+- Input = 14x14x6
+- Output = 10x10x16
+- Layer 2: Convolutional layer with output = 10x10x16
+- Output = (input-filter +1)/strides => 10 = (14 - 5 + 1)/1
+- Apply a RELU Activation function to the output
+- Pooling with Input = 10x10x16 and Output = 5x5x16
+
+STEP 3: Flattening the network
+
+- Flatten the network with Input = 5x5x16 and Output = 400
+
+STEP 4: Fully connected layer
+
+- Layer 3 fully connected layer with input 400 and Output 120
+- Apply RELU activation function to the output
+
+STEP 5: Another fully connected layer
+
+- Layer 4: Fully connected layer with input = 120 and Output = 84
+- Apply a RELU Activation function to the output
+
+STEP 6: 
+
+- Layer 5: Fully connected layer with input = 84 and output = 43 (different classes)
 
 ## LENET NETWORK (Gradient-Based Learning Applied to Document Recognition)
 ### A creation by Yann LeCun, Léon Bottou, Yoshua Bengio, and Patric Haffner, 1998
