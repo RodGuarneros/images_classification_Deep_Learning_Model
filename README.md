@@ -2,6 +2,8 @@
 Predicting the class of traffic signs based on a deep learning classifier.
 Traffic sign classification for self-driving cars.
 
+![](https://github.com/RodGuarneros/images_classification_Deep_Learning_Model/blob/main/signs.jpg)
+
 The CNN used here is known as LeNet (A convolutional neural network).
 
 The dataset contains 43 different classes of signs.
@@ -79,7 +81,7 @@ STEP 6:
 
 ## LENET NETWORK (Gradient-Based Learning Applied to Document Recognition)
 ### A creation by Yann LeCun, Léon Bottou, Yoshua Bengio, and Patric Haffner, 1998
-![Here you can find the article](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)
+![](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)
 
 
 
